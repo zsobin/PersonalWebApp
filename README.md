@@ -23,7 +23,7 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
 
 2) Add a file to your partials called `navbar.ejs`: https://github.com/zsobin/PersonalWebApp/blob/master/views/partials/navbar.ejs
 
-3) Add that navbar to all of your app pages so that people can navigate around:
+3) Add that navbar to all of your app pages so that people can navigate around. See [index](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/index.ejs#L7-L9), [about](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/about.ejs#L7-L9), and [projects](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/projects.ejs#L7-L9).
 
     ```
       <header>
@@ -31,8 +31,3 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
       </header>
     ```
 
-  - index: https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/index.ejs#L7-L9
-  - about: https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/about.ejs#L7-L9
-  - projects: https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/projects.ejs#L7-L9
-  
-  
