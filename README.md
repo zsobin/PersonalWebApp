@@ -1,4 +1,4 @@
-# DemoWebApp
+# Personal Web App
 
 Check it out at: https://stark-anchorage-83903.herokuapp.com/
 
