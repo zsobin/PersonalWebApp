@@ -4,9 +4,8 @@ Check it out at: https://ancient-forest-87393.herokuapp.com/
 
 Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
 
-1) Add routing - modify your server-side code in `index.js` to support routing. Make sure you also add an `about.ejs` and a `projects.ejs` to your views.
+1) Add routing - modify your server-side code in `index.js` to support routing. Make sure you also add an `about.ejs` and a `projects.ejs` to your views. [See code here](https://github.com/zsobin/PersonalWebApp/blob/master/index.js#L13-L23)
 
-https://github.com/zsobin/PersonalWebApp/blob/master/index.js#L13-L23
 ```
 app.get('/', function(request, response) {
   response.render('pages/index');
