@@ -4,7 +4,7 @@ Check it out at: https://ancient-forest-87393.herokuapp.com/
 
 Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
 
-1) Add new app pages: Add pages called `about.ejs` and `projects.ejs` to [views/pages](https://github.com/zsobin/PersonalWebApp/tree/master/views/pages)
+1) Add new app pages: Add pages called `about.ejs` and `projects.ejs` to [views/pages](https://github.com/zsobin/PersonalWebApp/tree/master/views/pages). These files can be empty for now, or you could add something like `<h1> Hello! </h1>` so you know it's rendering.
 
 2) Add routing - modify your server-side code in `index.js` to support routing. [See code here](https://github.com/zsobin/PersonalWebApp/blob/master/index.js#L13-L23)
 
@@ -32,4 +32,7 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
         <% include ../partials/navbar %>
       </header>
     ```
+    
+4) Copy all the CSS over to your `public/stylesheets/main.css` file so your pages look a little prettier! https://github.com/zsobin/PersonalWebApp/blob/master/public/stylesheets/main.css
+
 
