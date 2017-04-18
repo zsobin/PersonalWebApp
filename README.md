@@ -33,6 +33,11 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
       </header>
     ```
     
-4) Copy all the CSS over to your `public/stylesheets/main.css` file so your pages look a little prettier! https://github.com/zsobin/PersonalWebApp/blob/master/public/stylesheets/main.css
+4) Copy all the CSS over to your `public/stylesheets/main.css` file so your pages look a little prettier! https://github.com/zsobin/PersonalWebApp/blob/master/public/stylesheets/main.css. You could also copy over the 
 
-
+5) Make it your own!
+    - Change images to your own
+    - Add your own project descriptions and bio
+    - Add more pages + routing
+    - Style it to look prettier! Check out the components available through bootstrap [here](http://getbootstrap.com/components/).
+ 
