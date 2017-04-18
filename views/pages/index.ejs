@@ -2,25 +2,23 @@
 <head>
     <% include ../partials/head %>
 </head>
+<body class="container">
 
-<body>
+  <header>
+    <% include ../partials/navbar %>
+  </header>
 
-  <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
-  <!-- Check out more components here: http://getbootstrap.com/components/ -->
-  <div class="page-header">
-    <h1>YOYO web apps are so cool</h1>
-  </div>
+  <main>
+    <div class="jumbotron">
+      <h1>It's all happening</h1>
+      <p>Our first Web App</p>
+    </div>
+    <iframe src="//giphy.com/embed/n5aPq3NIKHvIk" width="480" height="213" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/happy-gif-excited-tina-fey-n5aPq3NIKHvIk">via GIPHY</a></p>
+  </main>
 
-  <p id="demo">
-    This is me testing out a lil html file
-  </p>
-
-  <button class="btn btn-default" type="button" onclick="myFunction()">
-    Try it
-  </button>
-
-  <div id="doge-image"/>
+  <footer>
+    <% include ../partials/footer %>
+  </footer>
 
 </body>
-
 </html>

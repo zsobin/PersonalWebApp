@@ -9,8 +9,17 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 
+// Set up the app's routing
 app.get('/', function(request, response) {
   response.render('pages/index');
+});
+
+app.get('/about', function(request, response) {
+  response.render('pages/about');
+});
+
+app.get('/projects', function(request, response) {
+  response.render('pages/projects');
 });
 
 app.listen(app.get('port'), function() {
