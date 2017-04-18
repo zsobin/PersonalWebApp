@@ -2,34 +2,42 @@
 
 Check it out at: https://ancient-forest-87393.herokuapp.com/
 
-Before starting:
-- [ ] Create Heroku account (primary language = node) - https://signup.heroku.com/
-  - [ ] download and install command line tools - https://toolbelt.heroku.com/
-- [ ] Create Github account - https://github.com/join
-  - [ ] download and install command line tools - https://help.github.com/articles/set-up-git/#setting-up-git
-- [ ] download and install Node.js - https://nodejs.org/en/download/
-- [ ] download and install a text editor (I recommend submlime text- https://www.sublimetext.com/3)
+Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
 
-To set up and run:
+1) Add new app pages: Add pages called `about.ejs` and `projects.ejs` to [views/pages](https://github.com/zsobin/PersonalWebApp/tree/master/views/pages). These files can be empty for now, or you could add something like `<h1> Hello! </h1>` so you know it's rendering.
 
-1. Make a copy of my existing project on github
-  - Fork the project at https://github.com/zsobin/DemoWebApp.git
+2) Add routing - modify your server-side code in `index.js` to support routing. [See code here](https://github.com/zsobin/PersonalWebApp/blob/master/index.js#L13-L23)
 
-2. Bring your new copy onto your computer from github 
-  - `cd ~/Desktop`
-  - `git clone https://github.com/YourUserName/DemoWebApp.git`
-  - `cd DemoWebApp`
-  - `ls`
+    ```
+    app.get('/', function(request, response) {
+      response.render('pages/index');
+    });
 
-3. Initialize it as a heroku project
-  - `heroku login`
-  - `heroku create`
+    app.get('/about', function(request, response) {
+      response.render('pages/about');
+    });
 
-4. Send the heroku project to heroku’s servers and view it online
-  - `git push heroku master`
-  - `heroku open`
+    app.get('/projects', function(request, response) {
+      response.render('pages/projects');
+    });
 
-5. Install the project’s dependencies and run the project on your local servers
-  - `npm install`
-  - `heroku local web`
-  - check out http://localhost:5000
+    ```
+
+2) Add a file to your partials called `navbar.ejs`: https://github.com/zsobin/PersonalWebApp/blob/master/views/partials/navbar.ejs
+
+3) Add that navbar to all of your app pages ([index.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/index.ejs#L7-L9), [about.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/about.ejs#L7-L9), and [projects.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/projects.ejs#L7-L9)) so that people can navigate around your app:
+
+    ```
+      <header>
+        <% include ../partials/navbar %>
+      </header>
+    ```
+    
+4) Copy all the CSS over to your `public/stylesheets/main.css` file so your pages look a little prettier! https://github.com/zsobin/PersonalWebApp/blob/master/public/stylesheets/main.css. You could also copy over the 
+
+5) Make it your own!
+    - Change images to your own
+    - Add your own project descriptions and bio
+    - Add more pages + routing
+    - Style it to look prettier! Check out the components available through bootstrap [here](http://getbootstrap.com/components/).
+ 
