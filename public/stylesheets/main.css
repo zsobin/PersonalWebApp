@@ -1,11 +1,11 @@
 body {
   padding-top: 70px;
   background-color: #B0C4DE;
-
+  text-align: center;
 }
 
-main {
-  text-align: center;
+h1 {
+  font-family: 'Lobster', cursive;
 }
 
 .jumbotron {
@@ -15,32 +15,8 @@ main {
   margin-bottom: 15px;
 }
 
-.jumbotron h1 {
-  font-family: 'Lobster', cursive;
-}
-
-.jumbotron i {
-  padding-left: 6px;
-}
-
-
 .queen-of-computers {
   width: 630px;
-}
-
-.image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.image-container img{
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-.image-container img:hover {
-  opacity: 1;
 }
 
 .content {
@@ -59,12 +35,9 @@ main {
   justify-content: space-around;
   text-align: left;
 }
+
 .code-container img{
   padding: 20px;
   max-width: 300px;
   max-height: 200px;
-}
-
-h1 {
-  text-align: center;
 }
