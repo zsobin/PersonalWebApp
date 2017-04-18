@@ -2,34 +2,38 @@
 
 Check it out at: https://ancient-forest-87393.herokuapp.com/
 
-Before starting:
-- [ ] Create Heroku account (primary language = node) - https://signup.heroku.com/
-  - [ ] download and install command line tools - https://toolbelt.heroku.com/
-- [ ] Create Github account - https://github.com/join
-  - [ ] download and install command line tools - https://help.github.com/articles/set-up-git/#setting-up-git
-- [ ] download and install Node.js - https://nodejs.org/en/download/
-- [ ] download and install a text editor (I recommend submlime text- https://www.sublimetext.com/3)
+Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
 
-To set up and run:
+1) Add routing - modify your server-side code in `index.js` to support routing. Make sure you also add an `about.ejs` and a `projects.ejs` to your views.
 
-1. Make a copy of my existing project on github
-  - Fork the project at https://github.com/zsobin/DemoWebApp.git
+https://github.com/zsobin/PersonalWebApp/blob/master/index.js#L13-L23
+```
+app.get('/', function(request, response) {
+  response.render('pages/index');
+});
 
-2. Bring your new copy onto your computer from github 
-  - `cd ~/Desktop`
-  - `git clone https://github.com/YourUserName/DemoWebApp.git`
-  - `cd DemoWebApp`
-  - `ls`
+app.get('/about', function(request, response) {
+  response.render('pages/about');
+});
 
-3. Initialize it as a heroku project
-  - `heroku login`
-  - `heroku create`
+app.get('/projects', function(request, response) {
+  response.render('pages/projects');
+});
 
-4. Send the heroku project to heroku’s servers and view it online
-  - `git push heroku master`
-  - `heroku open`
+```
 
-5. Install the project’s dependencies and run the project on your local servers
-  - `npm install`
-  - `heroku local web`
-  - check out http://localhost:5000
+2) Add a file to your partials called `navbar.ejs`: https://github.com/zsobin/PersonalWebApp/blob/master/views/partials/navbar.ejs
+
+3) Add that navbar to all of your app pages so that people can navigate around:
+
+```
+  <header>
+    <% include ../partials/navbar %>
+  </header>
+```
+
+  - index: https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/index.ejs#L7-L9
+  - about: https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/about.ejs#L7-L9
+  - projects: https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/projects.ejs#L7-L9
+  
+  
