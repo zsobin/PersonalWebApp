@@ -1,6 +1,6 @@
 # Personal Web App
 
-Check it out at: https://pacific-plateau-64936.herokuapp.com/
+Check it out at: <a href="https://pacific-plateau-64936.herokuapp.com/" target="_blank">https://pacific-plateau-64936.herokuapp.com/</a>
 
 Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
 
