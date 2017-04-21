@@ -1,6 +1,6 @@
 # Personal Web App
 
-Check it out at: https://stark-anchorage-83903.herokuapp.com/
+Check it out at: https://pacific-plateau-64936.herokuapp.com/
 
 Make sure you've followed all instructions for [BaseWebApp](https://github.com/zsobin/BaseWebApp)
 
