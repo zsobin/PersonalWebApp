@@ -1,33 +1,35 @@
 body {
   padding-top: 70px;
-  background-color: #B0C4DE;
-  text-align: center;
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
 }
 
-.jumbotron {
-  background-color: white;
-  box-shadow: 0px 4px 32px -8px rgb(76, 73, 73);
-  padding: 20px 0px;
-  margin-bottom: 15px;
+h4 {
+  color: #b5b5b5;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.tina-gif {
+  margin: 50px auto;
+  display: block;
 }
 
 .queen-of-computers {
-  width: 630px;
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 50%;
+  display: block;
 }
 
 .content {
-  padding: 10px;
-  margin: auto;
-  margin-bottom: 20px;
-  text-align: left;
-  background-color: white;
-  border-radius: 3px;
-  width: 90%;
-  min-height: 400px;
+  margin-bottom: 50px;
 }
 
 .code-container {
@@ -40,4 +42,33 @@ h1 {
   padding: 20px;
   max-width: 300px;
   max-height: 200px;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.contact-container .content {
+  margin-top: 50px
+}
+
+.contact-icon {
+  font-size: 45px;
+  margin: 0 5px;
+}
+
+.contact-icon-link:hover {
+  text-decoration: none
+}
+
+.contact-icon.fa-linkedin-square {
+  color: #007bb6;
+}
+
+.contact-icon.fa-github-square {
+  color: #353535;
+}
+
+.contact-icon.fa-facebook-square {
+  color: #3b5998;
 }
