@@ -8,6 +8,8 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
 
 2) Add routing - modify your server-side code in `index.js` to support routing. [See code here](https://github.com/zsobin/PersonalWebApp/blob/master/index.js#L13-L23)
 
+*Since this updates the code that runs on the server, you need to restart your server to view the changes locally. You can do this by pressing control + c, and then then running `heroku local web` again. 
+
     ```
     app.get('/', function(request, response) {
       response.render('pages/index');
@@ -26,8 +28,6 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
     });
 
     ```
-
-Since this updates the code that runs on the server, you need to restart your server. You can do this by pressing control + c, and then then running `heroku local web` again. 
 
 2) Add a file to your partials called `navbar.ejs`: https://github.com/zsobin/PersonalWebApp/blob/master/views/partials/navbar.ejs
 
