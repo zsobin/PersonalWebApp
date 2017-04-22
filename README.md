@@ -27,6 +27,8 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
 
     ```
 
+Since this updates the code that runs on the server, you need to restart your server. You can do this by pressing control + c, and then then running `heroku local web` again. 
+
 2) Add a file to your partials called `navbar.ejs`: https://github.com/zsobin/PersonalWebApp/blob/master/views/partials/navbar.ejs
 
 3) Add that navbar to all of your app pages ([index.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/index.ejs#L7-L9), [about.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/about.ejs#L7-L9), [projects.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/projects.ejs#L7-L9)), and [contact.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/views/pages/contact.ejs#L7-L9) so that people can navigate around your app:
