@@ -10,7 +10,7 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
 
 *Since this updates the code that runs on the server, you need to restart your server to view the changes locally. You can do this by pressing control + c, and then then running `heroku local web` again. 
 
-    ```
+```
     app.get('/', function(request, response) {
       response.render('pages/index');
     });
@@ -27,17 +27,17 @@ Make sure you've followed all instructions for [BaseWebApp](https://github.com/z
       response.render('pages/contact');
     });
 
-    ```
+```
 
 2) Add a file to your helpers called `navbar.ejs`: https://github.com/zsobin/PersonalWebApp/blob/master/project/html/helpers/navbar.ejs
 
 3) Add that navbar to all of your app pages ([index.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/project/html/pages/index.ejs#L7-L9), [about.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/project/html/pages/about.ejs#L7-L9), [projects.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/project/html/pages/projects.ejs#L7-L9)), and [contact.ejs](https://github.com/zsobin/PersonalWebApp/blob/master/project/html/pages/contact.ejs#L7-L9) so that people can navigate around your app:
 
-    ```
-      <header>
-        <% include ../partials/navbar %>
-      </header>
-    ```
+```
+  <header>
+    <% include ../helpers/navbar %>
+  </header>
+```
     
 4) Copy all the CSS over to your `project/css/main.css` file so your pages look a little prettier! https://github.com/zsobin/PersonalWebApp/blob/master/project/css/main.css. 
 
