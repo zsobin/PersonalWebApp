@@ -25,7 +25,9 @@ app.get('/projects', function(request, response) {
 app.get('/contact', function(request, response) {
   response.render('pages/contact');
 });
-
+app.get('/eportfolio', function(request, response) {
+  response.render('pages/eportfolio/scmaintenancenotif');
+});
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

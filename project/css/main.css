@@ -1,4 +1,4 @@
-body {
+/* body {
   padding-top: 70px;
 }
 
@@ -71,4 +71,193 @@ h4 {
 
 .contact-icon.fa-facebook-square {
   color: #3b5998;
+} */
+body {
+  font-family: 'Fira Sans',"Open Sans",arial, sans-serif;
+  background-color: #434343;
+  color: #EEEEEE;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  font-family: 'Expletus Sans', cursive;
+  color: #81C7D4;
+  font-size: 50px;
+  text-align: left;
+  font-weight: bold;
+  margin: 3% 5% 0 5%;
+}
+h1 a {
+  color: #81C7D4;
+}
+
+h1 a:hover {
+  color:#7B90D2;
+  text-decoration:none;
+}
+h2 {
+
+  font-family: 'Expletus Sans', cursive;
+  color: #268785;
+  font-size: 50px;
+  text-align: left;
+  font-weight: bold;
+  margin: 5% 5% 0 5%;
+}
+h3 {
+
+  font-family: 'Expletus Sans', cursive;
+  color: #69B0AC;
+  font-size: 20px;
+  text-align: left;
+  font-weight: normal;
+  margin: 1% 5% 0 5%;
+}
+p {
+  font-size: 18px;
+  margin: 0 10%;
+}
+
+
+
+
+
+/*style the container*/
+.container {
+
+	background-color: #52575e;
+	display: block;
+  padding: 1%;
+  margin: 2% 10%;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.navbar {
+    float: right;
+    width: 70%;
+  margin: 0 5%;
+	}
+.navbar a {
+    float: right;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+	  color:#81C7D4;
+    margin: 0 1%;
+	}
+
+.nav li a:hover {
+    text-decoration: underline;
+    color:#7B90D2;
+    background-color: #52575e;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   float: right;
+    display: block;
+	overflow: hidden
+	}
+	
+/*style the dropdown button*/
+.dropbtn {background-color: #333333;
+		padding: 14px 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		font-weight: bold;
+		color:#92CF2E
+		}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3a3a3a;
+    min-width: inherit;
+	  color:#88C22A;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color:#88C22A;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+	float:none
+
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #BBBBBB; 
+  color: #4E92DF;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+   min-width:inherit;
+  text-align: center;
+  width:100px
+	
+	
+}
+footer {
+  width:100%;
+  background-color: #52575e;
+  margin:2% 0 0 0;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  padding:2%;
+  bottom:0;
+  z-index: 2;
+  
+}
+
+.icon {
+  color: rgba(165,222,228,1);
+  margin: 2%
+}
+
+.caption {
+  font-family: 'Expletus Sans', cursive;
+  font-size: 14px;
+  margin: 0.5%
+}
+
+.titleBackground {
+  background-color: rgba(165,222,228,1);
+  padding: 2%
+}
+
+#seagull {
+  width: 8%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  margin:1% 0 0 0;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+
+
+header {
+  width:100%;
+  background-color: #52575e;
+  margin:0 0;
+  padding:2% 0 1% 2%;
+  top:0;
+  position: fixed;
+  z-index: 1;
+  
+}
+
+i:hover {
+  color:#7B90D2;
 }

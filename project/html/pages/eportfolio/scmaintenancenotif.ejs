@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <% include ../../helpers/head %>
+</head>
+<body>
+    <div class="col-lg-12" style="width:100%;margin:0; padding:0">
+        <% include ../../helpers/navbar %>
+    </div>
+    <main class="content">
+        <div class="col-lg-12 titleBackground">
+            <h2>Maintenance Notification<br />Creation Tool</h2>
+            <h3>
+            July 6<sup>th</sup> to July 24<sup>th</sup> 2020<br />
+            Softchoice Application Development Team
+            </h3>
+        </div>
+        <div class="col-lg-12">
+            <div class="container">
+            <img src="/images/appDevBanner.png" width="100%"/>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8" style="margin-top:1%">
+            <p>
+                I was assigned to create a Maintenance Notification section for the employee web portal that
+                keeps track of the maintenance notifications records as well as send
+                those notifications at the indicated time as emails. The purpose of this project is to build a tool to 
+                make creating a professional email easier to that the deployment
+                engineer do not have to worry about formatting an email and
+                sending it at a specific time for the maintenance.
+                <br />
+                <br />
+                First, I had a meeting with my team leader to gather requirements, his ideas for
+                the layouts and some use cases to create mockup pages using paint.net.
+            </p>
+            <div class="container">
+                <img src="/images/AddNewMaintenance.png" width="100%"/>
+                <p class="caption">
+                Add Maintenance Notification Mockup page
+                </p>
+            </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2">&nbsp;</div>
+            <div class="col-lg-8" style="margin:1% 0">
+                <p>
+                    With those mockup pages, we had a meeting with the stakeholders (our
+                    team’s System Analyst) to discuss improvements on the layouts and
+                    logics on implementation.
+                    <br />
+                    <br />
+                    Once everything is well planned out, I began the implementation,
+                    creating one page and its functionalities at a time, and going back to
+                    it after its dependencies has been implemented. For example, I created
+                    the List Maintenance Notification page when the Maintenance Table in
+                    the database is still empty as I needed that page to have a link to
+                    bring me to the Add New Maintenance page. Once I am able to create a
+                    new Maintenance Notification record, I went back to the List page to
+                    get the records to be properly displayed.
+                </p>
+                <div class="container">
+                    <img src="/images/listMaintenanceNotifScreenShot.png" width="100%"/>
+                    <p class="caption">
+                    A screenshot of the List Maintenance Notification page
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-12" style="margin-top: 2%">
+            <div class="col-lg-6 col-md-6" style="margin-top: 2%">
+            <p>
+                I used HTML, CSS, JavaScript, jQuery, AngularJS and Ajax for the
+                front-end to display the records, the form for creating the records
+                and to pass the inputted data to the server. For the backend I mainly
+                used C# and LINQ to insert and retrieve data from the database, as
+                well as sending the notification as an email.
+                <br />
+                <br />
+                My team leader was satisfied with the features I included in the pages
+                and the extra effort I spent in order to meet the deadline of the
+                project. Now the job of creating a maintenance notification can easily
+                be done by an employee from a different team and the Application
+                Development Team can focus on other projects or the details of the
+                deployment.
+            </p>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:0">
+            <div class="container" style="margin:1% 5%; width:90%">
+                <video width="100%" controls>
+                <source src="/videos/maintenanceNotificationDemo.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+                </video>
+                <p class="caption">
+                Video Demo
+                </p>
+            </div>
+            </div>
+        </div>             
+        <a href="https://www.deviantart.com/dodrio65">
+        <img id="seagull" class="col-lg-1" src="/images/Seagull.png" />
+        </a>
+    </main>
+    <div class="col-lg-12" style="width:100%;margin:0; padding:0">
+    <% include ../../helpers/footer %>
+    </div>
+</body>
+</html>
