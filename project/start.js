@@ -13,11 +13,6 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
-
-app.get('/about', function(request, response) {
-  response.render('pages/about');
-});
-
 app.get('/projects', function(request, response) {
   response.render('pages/projects');
 });
@@ -25,7 +20,7 @@ app.get('/projects', function(request, response) {
 app.get('/contact', function(request, response) {
   response.render('pages/contact');
 });
-app.get('/eportfolio', function(request, response) {
+app.get('/maintenancenotif', function(request, response) {
   response.render('pages/eportfolio/scmaintenancenotif');
 });
 app.listen(app.get('port'), function() {

@@ -1,40 +1,49 @@
 <html lang="en">
 <head>
     <% include ../helpers/head %>
+    <script src="../js/projects.js"></script>
 </head>
-<body class="container">
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width:100%;margin:0; padding:0">
+        <% include ../helpers/navbar %>
+    </div>
+    <main class="content" ng-app="projectApp" ng-controller="projectCtrl">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titleBackground" style="margin-bottom: 5%;">
+        <h2>Projects</h2>
+        <h3>Here is a list of projects I have worked on.</h3>
+      </div>
+      
+      <div ng-repeat="project in projectList">
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4" ng-mouseenter="speak()">
+          <div class="container card">
+            <a href="{{project.link}}">
+              <h4>{{project.name}}</h4>
+              <div style="overflow: hidden; width:90%;margin:2% 5%">
+                <img src="{{project.image}}"width=100%/>
+              </div>
+            </a> 
+            <p class="caption card-caption">{{project.description}}</p>
+          </div>
+        </div> 
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 50px;">
+      </div>
 
-  <header>
-    <% include ../helpers/navbar %>
-  </header>
-
-  <main>
-    <div class="page-header">
-      <h1>Look what I did!</h1>
-      <h4 class="subheader">Disclaimer: I made none of these.</h4>
-    </div>
-    <div class="container">
-      <div class="code-container">
-        <img src="/images/facebook.png"/>
-        <div>
-          <h3>Flarpbook</h3>
-          <p>What a wild ride it's been. I build a social platform to help people connect and it's been a lot of fun to make a bajillion dollars. I learned a lot about trust and programming.</p>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 4%;width: 100%;">
+        <div class="col-sm-2 col-md-2 col-lg-1" ng-mouseenter="speak()" ng-click="unspeak()">
+          <img id="seagull" style="width: 100%;" src="/images/Seagull.png"/>
+        </div>
+        <div class="speech col-sm-6 col-md-4 col-lg-3">
+          <p class="attrLink">
+            <a href="http://www.freepik.com">Maintenance image designed by Lexamer/Freepik</a><br>
+            <a href="https://twitter.com/__idx___">Momeca image designed by idx</a>
+          </p>
+        </div>
       </div>
+      
+    </main>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width:100%;margin:0; padding:0">
+    <% include ../helpers/footer %>
     </div>
-    <div class="code-container">
-      <img src="/images/spotify.png"/>
-      <div>
-        <h3>Spootify</h3>
-        <p>Everyone's favorite mystical music app. I learned so much about desktop applications and also making a product that lots of people like to get really aggressive about when they compare it to lesser services like Rdio (rip). Spootify changed the whole world and make iTunes look like trash and also saved people a lot of money and time when it got them to stop downloading music.</p>
-      </div>
-    </div>
-    <div class="code-container">
-      <img src="/images/google.png"/>
-      <div>
-        <h3>Gargle</h3>
-        <p>Search for anything! The world is your oyster! This is one of my favorite projects because it gave me the skills and manpower to eventually take over the world. Think of anything.... it's on Gargle.</p>
-      </div>
-    </div>
-  </main>
 </body>
 </html>
