@@ -4,7 +4,7 @@ app.controller("projectCtrl", function($scope) {
         $scope.projectList = [
             {
                 "name": "Maintenance Notification Creation Tool",
-                "link": "/maintenanceNotif",
+                "link": "projects/maintenanceNotif",
                 "image": "/images/maintenanceLogo.jpg",
                 "description": "A web app that creates and sends email notification about scheduled maintenance window on indicated time."
             },
@@ -16,7 +16,7 @@ app.controller("projectCtrl", function($scope) {
             },
             {
                 "name": "Shoop - Android App",
-                "link": "/shoop",
+                "link": "projects/shoop",
                 "image": "/images/shoop.png",
                 "description": "A shopping application that provides different functionality depending on the three different roles of a user: admin, employee and customer."
             }
@@ -25,7 +25,7 @@ app.controller("projectCtrl", function($scope) {
         $(document).ready(function() {  
             $scope.speak = function() {
                 $(".speech").animate({
-                    width: "show"
+                    width: "show",
                 },"slow");
             }  
             $scope.unspeak = function() {

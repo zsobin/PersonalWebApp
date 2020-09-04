@@ -6,10 +6,11 @@ body {
   align-items: center;
 }
 
+
 h1 {
   font-family: 'Expletus Sans', cursive;
   color: #81C7D4;
-  font-size: 50px;
+  font-size: 3vw;
   text-align: left;
   font-weight: bold;
   margin: 3% 5% 0 5%;
@@ -26,16 +27,18 @@ h2 {
 
   font-family: 'Expletus Sans', cursive;
   color: #268785;
-  font-size: 50px;
+  font-size: 2.8vw;
   text-align: left;
   font-weight: bold;
   margin: 5% 5% 0 5%;
 }
+
+
 h3 {
 
   font-family: 'Expletus Sans', cursive;
   color: #69B0AC;
-  font-size: 20px;
+  font-size: 1.5vw;
   text-align: left;
   font-weight: normal;
   margin: 1% 5% 0 5%;
@@ -46,10 +49,10 @@ h4{
   text-align: center;
   font-family: 'Expletus Sans', cursive;
   color: rgba(165,222,228,1);
-  font-size: 22px;
+  font-size: 1.6vw;
   font-weight: normal;
   margin: 1% 4%;
-  height: 48px;
+  height: 3.2vw;
 
 }
 
@@ -59,7 +62,7 @@ a:hover {
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.1vw;
   margin: 0 10%;
 }
 
@@ -71,7 +74,7 @@ p {
 	background-color: #52575e;
 	display: block;
   padding: 1%;
-  margin: 2% 10%;
+  margin: 2% auto;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -85,7 +88,7 @@ p {
 	}
 .navbar a {
     float: right;
-    font-size: 16px;
+    font-size: 0.9vw;
     text-align: center;
     text-decoration: none;
 	  color:#81C7D4;
@@ -97,15 +100,12 @@ p {
     color:#7B90D2;
     background-color: #52575e;
 }
-
-/* The container <div> - needed to position the dropdown content */
+/*
 .dropdown {
    float: right;
     display: block;
 	overflow: hidden
 	}
-	
-/*style the dropdown button*/
 .dropbtn {background-color: #333333;
 		padding: 14px 16px;
 		font-size: 16px;
@@ -114,7 +114,6 @@ p {
 		font-weight: bold;
 		color:#92CF2E
 		}
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -125,30 +124,27 @@ p {
     z-index: 1;
 	
 }
-/* Links inside the dropdown */
-.dropdown-content a {
+ .dropdown-content a {
     color:#88C22A;
     padding: 14px 16px;
     text-decoration: none;
     display: block;
 	float:none
 
-}
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+} 
+ .dropdown-content a:hover {
   background-color: #BBBBBB; 
   color: #4E92DF;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+ .dropdown:hover .dropdown-content {
     display: block;
    min-width:inherit;
   text-align: center;
   width:100px
 	
 	
-}
+} */
 footer {
   width:100%;
   background-color: #52575e;
@@ -168,7 +164,7 @@ footer {
 
 .caption {
   font-family: 'Expletus Sans', cursive;
-  font-size: 14px;
+  font-size: 1vw;
   margin: 0.5%
 }
 
@@ -221,6 +217,7 @@ i:hover {
 }
 .speech {
   position: relative;
+  padding-right: 3%;
   border-radius: 3em;
   background-color: #52575e;
   /* overflow: hidden; */
@@ -239,16 +236,16 @@ i:hover {
 	border-right-color: #52575e;
 	border-left: 0;
 	border-bottom: 0;
-	margin-top: -4.5px;
-	margin-left: -10px;
+	margin-top: -0.2vw;
+	margin-left: -0.4vw;
 }
 .attrLink {
-  width: 50vw;
+  white-space: nowrap;
+  font-size: 0.9vw;
   margin: 1%;
 }
 .attrLink a {
   font-family: 'Fira Sans',"Open Sans",arial, sans-serif;
-  font-size: 14px;
   text-align: left;
   text-decoration: none;
   color:#81C7D4;
@@ -258,4 +255,77 @@ i:hover {
 .attrLink a:hover {
   color:#7B90D2;
   text-decoration:none;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+text-align: left;
+border-bottom: 0.1em solid rgba(165,222,228,1);
+}
+
+td:hover {
+  background-color: rgba(82, 87, 94,0.4);
+}
+
+.courseTitle {
+  font-size: 2vw;
+  margin: 1% 2% 0 2%;
+  font-weight: bold;
+}
+
+.courseTitle a {
+  color: #69B0AC;
+}
+.courseTitle a:hover {
+  color:#7B90D2;
+}
+.courseSubtitle {
+  font-size: 1.4vw;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 7.8vw;
+  }
+  h3 {
+    font-size: 3.5vw;
+  }
+  h4 {
+    font-size: 4vw;
+    height: 10vw;
+  }
+  p {
+    font-size: 2.2vw;
+  }
+  .navbar a {
+    font-size: 2.5vw;
+	}
+  .caption {
+    font-size: 3.5vw;
+  }
+  #seagull {
+    width: 10%;
+  }
+  .attrLink {
+    font-size: 2vw;
+  }
+  .courseTitle {
+    font-size: 3.5vw;
+    margin: 1% 2% 0 2%;
+    font-weight: bold;
+  }
+  .courseSubtitle {
+    font-size: 2vw;
+    font-weight: lighter;
+  }
+
 }
