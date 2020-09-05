@@ -12,6 +12,15 @@ app.controller("courseCtrl", function($scope) {
                 "description": "Logic Gates, Sequential Circuits, Finite State Machines, ALU, Storage, Control Unit, Assembly Code"
             },
             {
+                "code": "CSCB63",
+                "name": "Design and Analysis of Data Structures",
+                "semester": "Winter 2020",
+                "link": "https://utsc.calendar.utoronto.ca/course/cscb63h3",
+                "notesLink": "/documents/CSCB63Notes.pdf",
+                "notesName": "CSCB63Notes",
+                "description": "Worse Case Complexity, Balanced Trees, Priority Queues, Graphs, Amortized Analysis"
+            },
+            {
                 "code": "MATA22",
                 "name": "Linear Algebra I",
                 "semester": "Winter 2019",

@@ -13,10 +13,12 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
+app.get('/experience', function(request, response) {
+  response.render('pages/experience');
+});
 app.get('/projects', function(request, response) {
   response.render('pages/projects');
 });
-
 app.get('/courses', function(request, response) {
   response.render('pages/courses');
 });

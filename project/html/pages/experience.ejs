@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <% include ../helpers/head %>
+    <script src="../js/experience.js"></script>
+</head>
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width:100%;margin:0; padding:0">
+        <% include ../helpers/navbar %>
+    </div>
+    <main class="content" ng-app="experienceApp" ng-controller="experienceCtrl">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titleBackground" style="margin-bottom: 5%;">
+        <h2>Experiences</h2>
+        <h3>Here is a list of work experiences I had.</h3>
+      </div>
+      
+      <div ng-repeat="experience in experienceList">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" ng-mouseenter="speak()">
+          <div class="container card">
+            <!-- <a href="{{experience.link}}"> -->
+              <h4>{{experience.name}} <small> - {{experience.date}}</small></h4>
+
+              <div style="overflow: hidden; width:90%;margin:2% 5%">
+                <img src="{{experience.image}}"width=100%/>
+              </div>
+            </a> 
+            <p class="caption card-caption">{{experience.description}}</p>
+            <p class="attrLink">
+              <a href="{{experience.orgLink}}">Learn more about the organization!</a>
+            </p>
+          </div>
+        </div> 
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height: 50px;">
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 4%;width: 100%;">
+        <div class="col-xs-3 col-sm-2 col-md-2 col-lg-1" ng-mouseenter="speak()" ng-click="unspeak()">
+          <img id="seagull" style="width: 100%;" src="/images/Seagull.png"/>
+        </div>
+        <div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 speech">
+          <p class="attrLink">
+            More details coming soon!
+          </p>
+        </div>
+      </div>
+      
+    </main>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width:100%;margin:0; padding:0">
+    <% include ../helpers/footer %>
+    </div>
+</body>
+</html>

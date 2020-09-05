@@ -52,7 +52,12 @@ h4{
   font-size: 1.6vw;
   font-weight: normal;
   margin: 1% 4%;
-  height: 3.2vw;
+  min-height: 3.2vw;
+
+}
+h4 small{
+  color: rgba(165,222,228,1);
+  font-weight: light;
 
 }
 
@@ -232,12 +237,12 @@ i:hover {
 	top: 50%;
 	width: 0;
 	height: 0;
-	border: 10px solid transparent;
+	border: 1.2vw solid transparent;
 	border-right-color: #52575e;
 	border-left: 0;
 	border-bottom: 0;
-	margin-top: -0.2vw;
-	margin-left: -0.4vw;
+	margin-top: -0.8vw;
+	margin-left: -0.7vw;
 }
 .attrLink {
   white-space: nowrap;
