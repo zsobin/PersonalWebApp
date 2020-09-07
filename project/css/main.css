@@ -14,9 +14,11 @@ h1 {
   text-align: left;
   font-weight: bold;
   margin: 3% 5% 0 5%;
+  transition: 0.2s;
 }
 h1 a {
   color: #81C7D4;
+  transition: 0.2s;
 }
 
 h1 a:hover {
@@ -87,10 +89,11 @@ p {
   
 }
 .navbar {
-    float: right;
-    width: 70%;
+  float: right;
+  width: 100%;
   margin: 0 5%;
-	}
+  min-height: max-content;
+}
 .navbar a {
     float: right;
     font-size: 0.9vw;
@@ -156,15 +159,21 @@ footer {
   margin:2% 0 0 0;
   position: sticky;
   position: -webkit-sticky; /* Safari */
-  padding:2%;
+  padding:4%;
   bottom:0;
   z-index: 2;
-  
+  min-height: max-content;
+  float: left;
 }
 
 .icon {
   color: rgba(165,222,228,1);
-  margin: 2%
+}
+
+.iconLink {
+  width: 1em;
+  display: inline-block;
+  margin-left: 5vw;
 }
 
 .caption {
@@ -179,7 +188,6 @@ footer {
 }
 
 #seagull {
-  width: 8%;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   margin:1% 0 0 0;
@@ -196,8 +204,8 @@ header {
   padding:2% 0 1% 2%;
   top:0;
   position: fixed;
-  z-index: 1;
-  
+  z-index: 2;
+  transition: 0.2s;
 }
 
 i:hover {
@@ -294,6 +302,68 @@ td:hover {
   font-weight: lighter;
 }
 
+#homeBg {
+  height: 200%;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  top:-70%;
+
+  background-image: url(/images/titleBg3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+
+  transition: transform 1s, filter 1s ease-in-out;
+  transform: scale(1.4);
+  filter: grayscale(0.7) blur(1px);
+}
+
+/* #homeBg:hover {
+  transform: scale(1.1);
+  filter: grayscale(0) blur(0px);
+} */
+
+#homeTitle {
+  margin: auto;
+  position: relative;
+  top:20%;
+  text-align: center;
+  color: #FDFDFD;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 20vh;
+  text-shadow: 2px 2px 5px #434343;
+  z-index: 1;
+}
+
+#homeDiv {
+  overflow: hidden;
+  width: 100%;
+  height: 90%;
+}
+
+#homeDiv:hover > #homeBg {
+    transform: scale(1.1);
+    filter: grayscale(0) blur(0px);
+}
+/* #homeBg img{
+    transition: transform 1s, filter 1.5s ease-in-out;
+    transform: scale(1.2);
+    filter: grayscale(1) blur(2px);
+    position: absolute; 
+    left: 0; 
+    top: -10vh;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#homeBg img:hover {
+  transform: scale(1);
+  filter: grayscale(0) blur(0px);
+} */
+
 @media screen and (max-width: 750px) {
   h1 {
     font-size: 8vw;
@@ -309,7 +379,7 @@ td:hover {
     height: 10vw;
   }
   p {
-    font-size: 2.2vw;
+    font-size: 3vw;
   }
   .navbar a {
     font-size: 2.5vw;
@@ -317,20 +387,33 @@ td:hover {
   .caption {
     font-size: 3.5vw;
   }
-  #seagull {
-    width: 10%;
-  }
   .attrLink {
     font-size: 2vw;
   }
   .courseTitle {
-    font-size: 3.5vw;
+    font-size: 5vw;
     margin: 1% 2% 0 2%;
     font-weight: bold;
   }
   .courseSubtitle {
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: lighter;
   }
+  .iconLink {
+    margin-left: 10vw;
+  }
 
+  #homeBg {
+    top:-60%;
+    height: 100%;
+  }
+
+  #homeDiv {
+    height: 80%;
+  }
+
+  #homeTitle {
+    
+    font-size: 20vh;
+  }
 }

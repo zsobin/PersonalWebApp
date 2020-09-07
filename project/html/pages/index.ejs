@@ -9,11 +9,17 @@
   </div>
 
   <main class="content">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titleBackground" style="margin-bottom: 5%;">
+<!--     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titleBackground" style="margin-bottom: 5%;">
       <h2>Welcome to my site!</h2>
       <h3>A little about me</h3>
+    </div> -->
+    <div id="homeDiv">
+      <h1 id="homeTitle">Artina <br> Sin</h1>
+      <div id="homeBg">
+      </div>
+      
     </div>
-    <p>
+    <p style="margin-top: 2%;">
       I'm a student majoring in Computer Science and Mathematics at University of Toronto Scarborough.
       With all the knowledge and experiences acquired throughout my life, I am keen to turn on the light bulbs inside minds and light up the world, just like my own teachers. 
       <br><br>
@@ -23,24 +29,30 @@
       I believe my passion in problem-solving as a developer would make the society I contribute to a better place. 
       <br><br>
       During my free time, I enjoy drawing. The tiny seagull on the bottom left of this page is one of my
-      quick sketches. If you want to see more drawings made by me, feel free to click on the seagull.(By the way, his name is Miguel)
+      quick sketches. If you want to see more digital paintings made by me, feel free to click on the seagull.
     </p>
 
-    <h3>
-      Short notice:
-    </h3>
-    <p>
-      This website is currently under development, many of the links are not actually linked to anything. Sorry for any inconvenience caused.
-    </p>
-      <a href="https://www.deviantart.com/dodrio65">
-        <img id="seagull"
-      class="col-lg-1"
-      src="/images/Seagull.png"
-    />
-      </a>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 2%;width: 100%;">
+        <img id="seagull"  class="col-xs-3 col-sm-2 col-md-2 col-lg-1" style="z-index: 1;" src="/images/Seagull.png" onclick="toggleSpeak()"></input>  
+        <div class="col-xs-8 col-sm-6 col-md-4 col-lg-3 speech">
+          <p class="attrLink">
+            
+            <a href="https://www.deviantart.com/dodrio65">
+              Click here to visit my Deviant Art Account!
+            </a>
+          </p>
+        </div>
+      </div>
   </main>
-<div class="col-lg-12" style="width:100%;margin:0; padding:0">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width:100%;margin:0; padding:0">
   <% include ../helpers/footer %>
 </div>
 </body>
 </html>
+<script>
+  function toggleSpeak(){
+    $(".speech").animate({
+        width: "toggle",
+    },"slow");
+  }
+</script>
