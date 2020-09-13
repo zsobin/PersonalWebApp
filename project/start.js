@@ -22,6 +22,9 @@ app.get('/projects', function(request, response) {
 app.get('/courses', function(request, response) {
   response.render('pages/courses');
 });
+app.get('/resume', function(request, response) {
+  response.render('pages/resume');
+});
 app.get('/projects/maintenancenotif', function(request, response) {
   response.render('pages/eportfolio/scmaintenancenotif');
 });

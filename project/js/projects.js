@@ -5,7 +5,7 @@ app.controller("projectCtrl", function($scope) {
             {
                 "name": "Maintenance Notification Creation Tool",
                 "link": "projects/maintenanceNotif",
-                "image": "/images/maintenanceLogo.jpg",
+                "image": "/images/maintenanceLogo.png",
                 "description": "A web app that creates and sends email notification about scheduled maintenance window on indicated time."
             },
             {

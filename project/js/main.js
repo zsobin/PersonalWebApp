@@ -24,4 +24,9 @@ $(document).ready(function() {
     headerHeight = $("header").outerHeight();
     $(".content").css("margin-top", headerHeight);
   }
+  document.getElementById("seagull").onclick = function() {
+    $(".speech").animate({
+        width: "toggle"
+    },"slow");
+  };
 });
