@@ -88,5 +88,13 @@ app.controller("courseCtrl", function($scope) {
                 },"slow");
             }
 
+            $(".notesPreview").click(function() {
+                var noteName = $(this).attr("id").slice(1);
+                $("#" + noteName).animate({
+                    height: "toggle",
+                },"slow");
+                $(this).html(($(this).html() == "Preview")? "Close" : "Preview");
+            });
+
         });
 });

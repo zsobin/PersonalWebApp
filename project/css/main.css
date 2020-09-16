@@ -386,6 +386,17 @@ td:hover {
   margin:1% 3%;
 }
 
+.notesPreview {
+  background-color: #268785;
+  margin: 1% 2% 0 2%;
+  font-family: 'Fira Sans',"Open Sans",arial, sans-serif;
+  border-radius: 1vw;
+  border:none;
+}
+button:focus{
+  outline: none;
+}
+
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 8vw;
