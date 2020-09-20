@@ -10,20 +10,20 @@
     <main class="content" ng-app="experienceApp" ng-controller="experienceCtrl">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 titleBackground" style="margin-bottom: 5%;">
         <h2>Experiences</h2>
-        <h3>Here is a list of work experiences I had.</h3>
+        <h3>Here is a list of work experiences I have had.</h3>
       </div>
       
       <div ng-repeat="experience in experienceList">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" ng-mouseenter="speak()">
           <div class="container card">
             <!-- <a href="{{experience.link}}"> -->
-              <h4>{{experience.name}} <small> - {{experience.date}}</small></h4>
-
+              
+              <h4>{{experience.name}}</br><small> {{experience.date}}</small></h4>
               <div style="overflow: hidden; width:90%;margin:2% 5%">
                 <img src="{{experience.image}}"width=100%/>
               </div>
-            </a> 
-            <p class="caption card-caption">{{experience.description}}</p>
+            <!-- </a> --> 
+            <p class="caption cardCaption">{{experience.description}}</p>
             <p class="attrLink">
               <a href="{{experience.orgLink}}" target="_blank">Learn more about the organization!</a>
             </p>

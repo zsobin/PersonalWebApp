@@ -19,10 +19,11 @@
               <a href="{{course.notesLink}}" download="{{course.notesName}}" title="Download Notes"><span style="margin-bottom: 2%;"><i class="fas fa-file-download fa-sm"></i></span></a><button type="button" id="p{{course.code}}" class="notesPreview courseSubtitle">Preview</button></p>
             <h3 style="margin: 1% 2% 0 2%">{{course.semester}}</h3>
             <p style="margin: 2%">{{course.description}}</p>
+            <div class=" col-md-2 col-lg-2"></div>
             <div id="{{course.code}}" style="display: none;margin: 1% auto;" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
               <iframe src="{{course.notesLink}}" width="100%" height="300%"></iframe>
             </div>
-            
+            <div class=" col-md-2 col-lg-2"></div>
             </td>
           </tr>
         </table>

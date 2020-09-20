@@ -10,7 +10,7 @@ body {
 h1 {
   font-family: 'Expletus Sans', cursive;
   color: #81C7D4;
-  font-size: 3vw;
+  font-size: 3.2vw;
   text-align: left;
   font-weight: bold;
   margin: 3% 5% 0 5%;
@@ -32,7 +32,7 @@ h2 {
   font-size: 2.8vw;
   text-align: left;
   font-weight: bold;
-  margin: 5% 5% 0 5%;
+  margin: 2% 5% 0 5%;
 }
 
 
@@ -52,14 +52,14 @@ h4{
   color: rgba(165,222,228,1);
   font-size: 1.6vw;
   font-weight: normal;
-  margin: 1% 4% 2%;
-  min-height: 3.2vw;
+  margin: 2% 5% 1.3%;
+  min-height: 3.6vw;
 
 }
 h4 small{
-  color: rgba(165,222,228,1);
+  color: rgb(120, 179, 185);
   font-weight: light;
-
+  float: left;
 }
 
 a:hover {
@@ -182,7 +182,7 @@ footer {
 
 .titleBackground {
   background-color: rgba(165,222,228,1);
-  padding: 2%
+  padding: 1.2% 3%
 }
 
 #seagull {
@@ -213,7 +213,7 @@ i:hover {
 }
 
 .card {
-  padding: 2%;
+  padding: 1.5%;
 }
 /*https://w3bits.com/css-image-hover-zoom/*/
 .card img {
@@ -225,8 +225,9 @@ i:hover {
   filter: saturate(100%);
 }
 .cardCaption {
-  text-align: justify;
+  text-align: left;
   font-weight: lighter;
+  margin: 0 5%;
 }
 .speech {
   position: relative;
@@ -365,7 +366,7 @@ td:hover {
 } */
 
 .resume {
-  border-bottom:0.15vw #268785 solid; 
+  border-bottom:0.15vw #40a6a1 solid; 
   padding-bottom: 2%;
   margin:3% 10%;
 }
@@ -384,6 +385,7 @@ td:hover {
 }
 .resume h2 {
   margin:1% 3%;
+  color:#40a6a1;
 }
 
 .notesPreview {
@@ -412,7 +414,7 @@ button:focus{
     min-height: 10vw;
   }
   p {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .resume ul li{
     font-size: 2.5vw;
@@ -421,7 +423,7 @@ button:focus{
     font-size: 2.5vw;
 	}
   .caption {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
   .attrLink {
     font-size: 2vw;
