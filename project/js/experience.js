@@ -4,11 +4,19 @@ app.controller("experienceCtrl", function($scope) {
 
         $scope.experienceList = [
             {
+                "name": "TutorOcean Online Tutor",
+                "date": "Oct 2020 -",
+                //"link": "projects/maintenanceNotif",
+                "image": "/images/tutoroceanLogo.jpg",
+                "description": "In the interest of gaining teaching experience, I became a part-time online tutor to mentoring High School and University Students on various Math subjects.",
+                "orgLink":"https://www.tutorocean.com/"
+            },
+            {
                 "name": "Softchoice App Dev Co-op",
                 "date": "May-Aug 2020",
                 //"link": "projects/maintenanceNotif",
                 "image": "/images/softchoiceLogo.png",
-                "description": "I worked as a .NET Developer Co-op at the Application Development Team at Softchoice. I mainly worked on creating data visualizations on the internal employee web portal.",
+                "description": "I worked as a .NET Developer Co-op at the Application Development Team at Softchoice. I mainly worked on creating data visuals on the employee web portal.",
                 "orgLink":"https://www.softchoice.com/"
             },
             {

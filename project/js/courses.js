@@ -21,6 +21,15 @@ app.controller("courseCtrl", function($scope) {
                 "description": "Worse Case Complexity, Balanced Trees, Priority Queues, Graphs, Amortized Analysis"
             },
             {
+                "code": "CSCC73",
+                "name": "Algorithm Design and Analysis",
+                "semester": "Fall 2020",
+                "link": "https://utsc.calendar.utoronto.ca/course/cscc73h3",
+                "notesLink": "/documents/CSCC73Notes.pdf",
+                "notesName": "CSCC73Notes",
+                "description": "Greedy Algorithm, Divide and Conquer, Dynamic Programming, Max Flow and its Applications, Linear Programming, Approximation Algorithm"
+            },
+            {
                 "code": "MATA22",
                 "name": "Linear Algebra I",
                 "semester": "Winter 2019",
@@ -64,6 +73,15 @@ app.controller("courseCtrl", function($scope) {
                 "notesLink": "/documents/MATB61Notes.pdf",
                 "notesName": "MATB61Notes",
                 "description": "Linear Programming, Simplex Method, Duality, Integer Programming, Transportation Problem, Assignment Problem"
+            },
+            {
+                "code": "MATC01",
+                "name": "Groups and Symmetry",
+                "semester": "Fall 2020",
+                "link": "https://utsc.calendar.utoronto.ca/course/matc01h3",
+                "notesLink": "/documents/MATC01Notes.pdf",
+                "notesName": "MATC01Notes",
+                "description": "Groups, Subgroups, Cyclic Groups, Permutation Groups, Homomorphisms, Cosets, Lagrange's Theorem, Normal Subgroups, Quotient Groups"
             },
             {
                 "code": "STAB52",

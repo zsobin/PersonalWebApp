@@ -214,6 +214,7 @@ i:hover {
 
 .card {
   padding: 1.5%;
+  height: 75%;
 }
 /*https://w3bits.com/css-image-hover-zoom/*/
 .card img {
@@ -227,7 +228,8 @@ i:hover {
 .cardCaption {
   text-align: left;
   font-weight: lighter;
-  margin: 0 5%;
+  margin: auto;
+  width: 90%;
 }
 .speech {
   position: relative;
@@ -417,13 +419,13 @@ button:focus{
     font-size: 2.5vw;
   }
   .resume ul li{
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   .navbar a {
-    font-size: 2.5vw;
+    font-size: 2vw;
 	}
   .caption {
-    font-size: 3vw;
+    font-size: 2vw;
   }
   .attrLink {
     font-size: 2vw;
