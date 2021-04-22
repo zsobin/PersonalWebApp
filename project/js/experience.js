@@ -4,6 +4,14 @@ app.controller("experienceCtrl", function($scope) {
 
         $scope.experienceList = [
             {
+                "name": "Toronto Transit Commission System Analyst Co-op",
+                "date": "Jan-Apr 2021",
+                //"link": "projects/maintenanceNotif",
+                "image": "/images/ttcLogo.png",
+                "description": "As a Co-op Student in the Procedure and Control Department, I used VBA to automate some of their manual data manipulation.",
+                "orgLink":"http://www.ttc.ca/"
+            },
+            {
                 "name": "TutorOcean Online Tutor",
                 "date": "Oct 2020 -",
                 //"link": "projects/maintenanceNotif",

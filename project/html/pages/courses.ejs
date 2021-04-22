@@ -20,8 +20,10 @@
             <h3 style="margin: 1% 2% 0 2%">{{course.semester}}</h3>
             <p style="margin: 2%">{{course.description}}</p>
             <div class=" col-md-2 col-lg-2"></div>
-            <div id="{{course.code}}" style="display: none;margin: 1% auto;" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-              <iframe src="{{course.notesLink}}" width="100%" height="300%"></iframe>
+            <div id="{{course.code}}" style="display: none;margin: 1% auto;height:80vh" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+              <object data="{{course.notesLink}}" type="application/pdf"width="100%" height="100%">
+              <iframe src="{{course.notesLink}}" width="100%" height="100%"></iframe>
+              </object>
             </div>
             <div class=" col-md-2 col-lg-2"></div>
             </td>

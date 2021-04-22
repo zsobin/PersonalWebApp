@@ -214,7 +214,7 @@ i:hover {
 
 .card {
   padding: 1.5%;
-  height: 75%;
+  height: fit-content;
 }
 /*https://w3bits.com/css-image-hover-zoom/*/
 .card img {

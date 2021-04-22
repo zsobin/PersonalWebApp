@@ -57,6 +57,15 @@ app.controller("courseCtrl", function($scope) {
                 "description": "Planes, Curves, Limits, Partial Derivatives, Higher Order Derivatives, Extrema of Real Valued Functions, Double Integrals, Triple Integrals"
             },
             {
+                "code": "MATB43",
+                "name": "Introduction to Analysis",
+                "semester": "Winter 2021",
+                "link": "https://utsc.calendar.utoronto.ca/course/matb43h3",
+                "notesLink": "/documents/MATB43Notes.pdf",
+                "notesName": "MATB43Notes",
+                "description": "Real Sequences, Real Series, Open and Closed Sets, Limits, Continuity, Derivatives, Sequence of Functions, Series of Functions"
+            },
+            {
                 "code": "MATB44",
                 "name": "Differential Equations I",
                 "semester": "Fall 2019",
