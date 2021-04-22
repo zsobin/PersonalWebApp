@@ -3,6 +3,12 @@ app.controller("projectCtrl", function($scope) {
 
         $scope.projectList = [
             {
+                "name": "Import Track Times Macro",
+                "link": "projects/trackTimesMacro",
+                "image": "/images/trackTimesLogo.png",
+                "description": "A Microsoft Excel script that automates the process of importing subway track work data."
+            },
+            {
                 "name": "Maintenance Notification Creation Tool",
                 "link": "projects/maintenanceNotif",
                 "image": "/images/maintenanceLogo.png",

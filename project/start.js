@@ -25,6 +25,9 @@ app.get('/courses', function(request, response) {
 app.get('/resume', function(request, response) {
   response.render('pages/resume');
 });
+app.get('/projects/trackTimesMacro', function(request, response) {
+  response.render('pages/eportfolio/ttctracktimesmacro');
+});
 app.get('/projects/maintenancenotif', function(request, response) {
   response.render('pages/eportfolio/scmaintenancenotif');
 });

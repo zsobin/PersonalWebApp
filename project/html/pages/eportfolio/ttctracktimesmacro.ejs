@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <% include ../../helpers/head %>
+</head>
+<body>
+    <div class="col-lg-12" style="width:100%;margin:0; padding:0">
+        <% include ../../helpers/navbar %>
+    </div>
+    <main class="content">
+        <div class="col-lg-12 titleBackground">
+            <h2>Import Track Times Macro</h2>
+            <h3>
+            March 2021<br />
+            TTC Procedure and Control Department (Subway Infrastructure)
+            </h3>
+        </div>
+        <div class="col-lg-12">
+            <div class="container">
+            <img src="/images/macroBanner.png" width="100%"/>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8" style="margin-top:1%">
+            <p>
+                Manually copying data from one table to another takes time. 
+                Manually copying data from five tables in a workbook to another workbook daily or 
+                all at once monthly is too tedious. To make this worse, the order of the columns 
+                in the source changes and doesn't always matches the order of the columns in the destination.
+            </p>
+            <div class="container">
+                <img src="/images/compareTrackCols.png" width="100%"/>
+                <p class="caption">
+                An example of columns in the source having different ordering as columns in the destination
+                </p>
+            </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2">&nbsp;</div>
+            <div class="col-lg-8" style="margin:1% 0">
+                <p>
+                    Well, clearly what a <s>lazy</s> efficent Computer Science Student would do here is to 
+                    find a way to automate it. So, after understanding the problem, I used the macro recorder 
+                    feature in Excel to get started.
+                </p>
+                <div class="container">
+                    <img src="/images/macroRecorder.png" width="100%"/>
+                    <p class="caption">
+                    The macro recorder feature in MS Excel
+                    </p>
+                </div>
+                <p>
+                    Since the files seems to be prepared manually, there are often typos and 
+                    different names for the same column as well as worksheet 
+                    (e.g., the worksheet YU can sometimes be called YUS). 
+                    <br/>
+                    <br/>
+                    However, the ordering of the columns is the same for the same number of columns, so at the beginning, 
+                    the recorded macro only copies and pastes columns from one of its worksheet to the master file according 
+                    to the number of columns in the source worksheet.
+                    <br/>
+                    <br/>
+                    Throughout the process, I have been asking myself, how can I make this process easier for the user? 
+                    What are the things I, as the user, find inconvenient? By asking these questions, I motivated myself 
+                    to improve the code.
+                    <br/>
+                    <br/>
+                    After using it for a while, I made more improvements so that it works more flexibly, such as copying and 
+                    pasting data by column names and sheet names, while catching and handling cases where the names are not exactly the same. 
+                    Whenever some data cannot be imported, the user will be informed, then such cases can either be handled manually or 
+                    be added to a switch case statement to take care of such cases.
+                </p>
+                    <div class="container">
+                        <img src="/images/TrackTimesErrorMsg.png" width="100%"/>
+                        <p class="caption">
+                        A dialog box that informs the user a column cannot be imported to the destination file
+                        </p>
+                    </div>
+                <p>
+                    Also, instead of running it sheet by sheet, I slowly expanded it so that there is a UI for users to find the source files 
+                    they wish to import with File Explorer and import them all at once.
+                </p>
+                <div class="container">
+                    <img src="/images/TrackTimesUI.png" width="100%"/>
+                    <p class="caption">
+                    A screenshot of the interface to select source files 
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-12" style="margin-top: 2%">
+            <div class="col-lg-6 col-md-6" style="margin-top: 2%">
+            <p>
+                Now, instead of spending a good 8 minutes per file to make sure everything is in 
+                the proper worksheet and column, the person assigned to this chore can get it all 
+                done in a minute or two, as long as there is no typo in a column. 
+            </p>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:0">
+            <div class="container" style="margin:1% 5%; width:90%">
+                <video width="100%" controls>
+                <source src="/videos/ImportTrackTimesDemo.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+                </video>
+                <p class="caption">
+                Video Demo
+                </p>
+            </div>
+            </div>
+        </div>             
+        <img id="seagull" class="col-xs-2 col-sm-2 col-md-2 col-lg-1" src="/images/Seagull.png" />
+    </main>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width:100%;margin:0; padding:0">
+    <% include ../../helpers/footer %>
+    </div>
+</body>
+</html>
