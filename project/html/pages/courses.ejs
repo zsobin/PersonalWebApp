@@ -12,10 +12,13 @@
         <h2>Course Notes</h2>
         <h3>Here is a list of university courses I have taken and have hand-written notes for. Feel free to download and use it!</h3>
       </div>
-        <table>
-          <tr ng-repeat="course in courseList">
+      <div style="margin-left: 5%;display: inline;">
+        <i class="fas fa-search fa-2x" style="color:#69B0AC;padding: 0.5%;"></i><input type="text" ng-model="courseFilter" placeholder="Search by Course Code">
+      </div>
+       <table>
+          <tr ng-repeat="course in courseList" ng-show="([course.code]|filter:courseFilter).length">
             <td>
-            <p class="courseTitle"><a href="{{course.link}}" title="To Course Website" target="_blank">{{course.code}}<span class="courseSubtitle"> - {{course.name}}</span></a>
+            <p class="courseTitle"><a href="{{course.link}}" title="To Course Website" target="_blank">{{course.code}}<span class="courseSubtitle"> - {{course.courseName}}</span></a>
               <a href="{{course.notesLink}}" download="{{course.notesName}}" title="Download Notes"><span style="margin-bottom: 2%;"><i class="fas fa-file-download fa-sm"></i></span></a><button type="button" id="p{{course.code}}" class="notesPreview courseSubtitle">Preview</button></p>
             <h3 style="margin: 1% 2% 0 2%">{{course.semester}}</h3>
             <p style="margin: 2%">{{course.description}}</p>

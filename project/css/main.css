@@ -72,6 +72,14 @@ p {
   margin: 0 10%;
 }
 
+input[type=text] {
+  font-family: 'Fira Sans', cursive;
+  background-color: #52575e;
+  color:#69B0AC;
+  margin-bottom: 2%;
+  border:none;
+  font-size: 1.5vw;
+}
 
 /*style the container*/
 .container {

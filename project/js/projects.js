@@ -15,8 +15,8 @@ app.controller("projectCtrl", function($scope) {
                 "description": "A web app that creates and sends email notification about scheduled maintenance window on indicated time."
             },
             {
-                "name": "Momeca - Discord Chatbot",
-                "link": "https://github.com/adin65/momeca",
+                "name": "Momeca - Discord Chat Bot",
+                "link": "projects/momeca",
                 "image": "/images/momeca.png",
                 "description": "A Discord bot that stores image links and replies those images to text channel when you tell it to."
             },

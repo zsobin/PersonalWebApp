@@ -31,6 +31,9 @@ app.get('/projects/trackTimesMacro', function(request, response) {
 app.get('/projects/maintenancenotif', function(request, response) {
   response.render('pages/eportfolio/scmaintenancenotif');
 });
+app.get('/projects/momeca', function(request, response) {
+  response.render('pages/eportfolio/momeca');
+});
 app.get('/projects/shoop', function(request, response) {
   response.render('pages/eportfolio/shoop');
 });

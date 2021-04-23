@@ -4,7 +4,7 @@ app.controller("courseCtrl", function($scope) {
         $scope.courseList = [
             {
                 "code": "CSCB58",
-                "name": "Computer Organization",
+                "courseName": "Computer Organization",
                 "semester": "Winter 2020",
                 "link": "https://utsc.calendar.utoronto.ca/course/cscb58h3",
                 "notesLink": "/documents/CSCB58Notes.pdf",
@@ -13,7 +13,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "CSCB63",
-                "name": "Design and Analysis of Data Structures",
+                "courseName": "Design and Analysis of Data Structures",
                 "semester": "Winter 2020",
                 "link": "https://utsc.calendar.utoronto.ca/course/cscb63h3",
                 "notesLink": "/documents/CSCB63Notes.pdf",
@@ -22,7 +22,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "CSCC73",
-                "name": "Algorithm Design and Analysis",
+                "courseName": "Algorithm Design and Analysis",
                 "semester": "Fall 2020",
                 "link": "https://utsc.calendar.utoronto.ca/course/cscc73h3",
                 "notesLink": "/documents/CSCC73Notes.pdf",
@@ -31,7 +31,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "MATA22",
-                "name": "Linear Algebra I",
+                "courseName": "Linear Algebra I",
                 "semester": "Winter 2019",
                 "link": "https://utsc.calendar.utoronto.ca/course/mata22h3",
                 "notesLink": "/documents/MATA22Notes.pdf",
@@ -40,7 +40,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "MATB24",
-                "name": "Linear Algebra II",
+                "courseName": "Linear Algebra II",
                 "semester": "Fall 2019",
                 "link": "https://utsc.calendar.utoronto.ca/course/matb24h3",
                 "notesLink": "/documents/MATB24Notes.pdf",
@@ -49,7 +49,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "MATB41",
-                "name": "Techniques of the Calculus of Several Variables I",
+                "courseName": "Techniques of the Calculus of Several Variables I",
                 "semester": "Fall 2019",
                 "link": "https://utsc.calendar.utoronto.ca/course/matb41h3",
                 "notesLink": "/documents/MATB41Notes.pdf",
@@ -58,7 +58,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "MATB43",
-                "name": "Introduction to Analysis",
+                "courseName": "Introduction to Analysis",
                 "semester": "Winter 2021",
                 "link": "https://utsc.calendar.utoronto.ca/course/matb43h3",
                 "notesLink": "/documents/MATB43Notes.pdf",
@@ -67,7 +67,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "MATB44",
-                "name": "Differential Equations I",
+                "courseName": "Differential Equations I",
                 "semester": "Fall 2019",
                 "link": "https://utsc.calendar.utoronto.ca/course/matb44h3",
                 "notesLink": "/documents/MATB44Notes.pdf",
@@ -76,7 +76,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "MATB61",
-                "name": "Linear Programming and Optimization",
+                "courseName": "Linear Programming and Optimization",
                 "semester": "Winter 2020",
                 "link": "https://utsc.calendar.utoronto.ca/course/matb61h3",
                 "notesLink": "/documents/MATB61Notes.pdf",
@@ -85,7 +85,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "MATC01",
-                "name": "Groups and Symmetry",
+                "courseName": "Groups and Symmetry",
                 "semester": "Fall 2020",
                 "link": "https://utsc.calendar.utoronto.ca/course/matc01h3",
                 "notesLink": "/documents/MATC01Notes.pdf",
@@ -94,7 +94,7 @@ app.controller("courseCtrl", function($scope) {
             },
             {
                 "code": "STAB52",
-                "name": "An Introduction to Probability",
+                "courseName": "An Introduction to Probability",
                 "semester": "Summer 2020",
                 "link": "https://utsc.calendar.utoronto.ca/course/stab52h3",
                 "notesLink": "/documents/STAB52Notes.pdf",
@@ -102,7 +102,6 @@ app.controller("courseCtrl", function($scope) {
                 "description": "Probability Models, Random Variables and Distributions, Expectation, 1D and 2D Change of Variables, Variance, Covariance, Correlation, Generating Functions, Sampling Distribution"
             },
         ];
-        
         $(document).ready(function() {  
             $scope.speak = function() {
                 $(".speech").animate({
@@ -114,14 +113,15 @@ app.controller("courseCtrl", function($scope) {
                     width: "hide"
                 },"slow");
             }
-
-            $(".notesPreview").click(function() {
+            $(".notesPreview").on("click",function() {
                 var noteName = $(this).attr("id").slice(1);
+                console.log(noteName)
                 $("#" + noteName).animate({
                     height: "toggle",
                 },"slow");
                 $(this).html(($(this).html() == "Preview")? "Close" : "Preview");
             });
-
+            
         });
+
 });
