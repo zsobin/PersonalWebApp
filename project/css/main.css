@@ -66,6 +66,12 @@ a:hover {
   text-decoration: none;
   color:#7B90D2;
 }
+p a {
+  color: #81C7D4;
+}
+p a:hover {
+  color:#768dda;
+}
 
 p {
   font-size: 1.1vw;
@@ -407,6 +413,15 @@ td:hover {
 }
 button:focus{
   outline: none;
+}
+blockquote{
+  background-color: #52575e;
+  margin:1% 10%;
+  color: #81C7D4;
+  font-size: 1.1vw;
+  font-family: 'Source Code Pro', monospace;
+  box-shadow: #434343 1px;
+  border-left: 5px solid #81C7D4;
 }
 
 @media screen and (max-width: 800px) {
