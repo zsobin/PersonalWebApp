@@ -4,6 +4,14 @@ app.controller("experienceCtrl", function($scope) {
 
         $scope.experienceList = [
             {
+                "name": "University of Toronto Teaching Assistant",
+                "date": "Sept 2021 - Apr 2022",
+                //"link": "projects/maintenanceNotif",
+                "image": "/images/UofTLogo.png",
+                "description": "By holding weekly tutorials and marking quizzes, I take part in teaching the courses MATA32 and MATA22.",
+                "orgLink":"https://www.utoronto.ca/"
+            },
+            {
                 "name": "Toronto Transit Commission System Analyst Co-op",
                 "date": "Jan-Apr 2021",
                 //"link": "projects/maintenanceNotif",
