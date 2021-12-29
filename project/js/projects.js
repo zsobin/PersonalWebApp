@@ -3,6 +3,12 @@ app.controller("projectCtrl", function($scope) {
 
         $scope.projectList = [
             {
+                "name": "Epsilon - Web App",
+                "link": "projects/epsilon",
+                "image": "/images/epsilonLogo.png",
+                "description": "A web application to help startups set up and get ready for their business."
+            },
+            {
                 "name": "Import Track Times Macro",
                 "link": "projects/trackTimesMacro",
                 "image": "/images/trackTimesLogo.png",

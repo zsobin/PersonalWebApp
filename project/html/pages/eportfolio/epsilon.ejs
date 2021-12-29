@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <% include ../../helpers/head %>
+</head>
+<body>
+    <div class="col-lg-12" style="width:100%;margin:0; padding:0">
+        <% include ../../helpers/navbar %>
+    </div>
+    <main class="content">
+        <div class="col-lg-12 titleBackground">
+            <h2>Epsilon - Web App</h2>
+            <h3>
+            Summer 2021<br />
+            CSCC01 (Introduction to Software Engineering) Group Project
+            </h3>
+        </div>
+        <div class="col-lg-12">
+            <div class="container">
+            <img src="/images/epsilonBanner.png" width="100%"/>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8" style="margin-top:1%">
+            <p>
+                Our CSCC01 (Introduction to Software Engineering) course project was to build an application 
+                that will assist entrepreneurs in preparing to start their own startup. It includes:
+            </p>
+            <div class="resume">
+                <ul>
+                    <li>a resource centre for users to learn how to pitch and legal document templates</li>
+                    <li>a company profile set-up feature to allow users to advertise their startup</li>
+                    <li>a job board so that entrepreneurs can recruit more talent</li>
+                    <li>a marketplace for service providers such as accounting services and product
+                        development services, which are partnered up with our stakeholder, to post their offers</li>
+                </ul> 
+            </div>
+            <p>
+                Given a list of requirements from our stakeholder, our team brainstormed and came up with user 
+                stories that will cover most of the requirements. We also decided to use <b>Django</b> and <b>MySQL</b> for 
+                the backend of our web application. Following scrum, we used Jira to create the user stories 
+                tickets and used scrum poker to assign points to each story.
+            </p>
+
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2">&nbsp;</div>
+            <div class="col-lg-8" style="margin:1% 0">
+                <p>
+                    We had four sprints for the project. At the beginning of each sprint, we discussed the priorities 
+                    of tickets under similar features and collectively decided a group of tickets that need to be done 
+                    this sprint. Then, we each pick tickets that we would like to work on, and discuss the satisfaction 
+                    criteria briefly. We used discord to hold frequent standups, where we share our progress on our tickets 
+                    and bring up any challenges we were facing. All the team members were very great resources when it came 
+                    to overcoming technical challenges. As we complete our ticket, we will create a pull request on GitHub and 
+                    ask two of the team members to review the pull request before merging to the Develop branch. Towards the end 
+                    of each sprint, the scrum master will organize the required documents for submission and ensure we are all 
+                    set for our next sprint.
+                </p>
+                <br>
+                <!-- <div class="container">
+                    <img src="/images/macroRecorder.png" width="100%"/>
+                    <p class="caption">
+                    The macro recorder feature in MS Excel
+                    </p>
+                </div> -->
+                <p>
+                    For the first sprint, I worked on the backend for allowing the company admin or company owner 
+                    to accept or decline a user wanting to join the company (which was then repurposed into viewing applicants’ 
+                    profiles and inviting users to the company with a generated team code when the job application features were 
+                    being developed).  In the second sprint, I worked on the frontend and backend for editing a user’s profile. 
+                    On the next two sprints, I took the role of refactoring the backend into three-tiered architecture, which I 
+                    learnt from my co-op experience with Softchoice and in lecture, and focused more on reviewing other team members’ 
+                    pull requests. On the third sprint, we decided to focus the first half of the sprint on improving our front end 
+                    appearance. As I worked on the team management page on the first sprint, I collaborated with Corey Fung to design 
+                    and redo that page, as well as the repurpose on handling join company requests mentioned above.
+                </p>
+                <div class="container">
+                    <img src="/images/teamManagement.png" width="100%"/>
+                    <p class="caption">
+                    A screenshot of the team management page
+                    </p>
+                </div>
+                <div class="container">
+                    <img src="/images/personprofile.png" width="100%"/>
+                    <p class="caption">
+                    A screenshot of the user profile page
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-12" style="margin-top: 2%">
+            <div class="col-lg-6 col-md-6" style="margin-top: 2%">
+            <p>
+                Towards the end, since I did more reviewing on other members’ code than developing myself, 
+                I learnt a lot from their coding styles and had a strong map on where features are located 
+                in the code and also which features compliments each other. We had quite a few merge conflicts 
+                towards the end of the fourth sprint; as I looked over more than half of the branches, I was able 
+                to notify my team members which part of the code was causing bugs due to the merge as we were testing 
+                and we managed to fix all major bugs before the sprint ended. In addition to that, I made a step-by-step 
+                instruction for our presenter to showcase most of the features implemented in the fourth sprint as one 
+                job application process.
+            </p>
+
+            </div>
+            
+            <div class="col-lg-6 col-md-6" style="padding:0">
+            <div class="container" style="margin:1% 5%; width:90%">
+                <div style="position: relative; height: 0; overflow: hidden; padding-bottom: 56.25%; /* 16/9 ratio */ border-style: none;">
+                    <iframe style="position: absolute; top:0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/dmE20DvKksE?modestbranding=1">
+                    </iframe>
+                </div>
+                <p class="caption">
+                Video Demo
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8" style="margin-top:1%">
+            <p>
+                We had two major roadblocks; we started slow on our first sprint as most of the members haven’t 
+                used Django before. Even worse, we were advised by our course’s teaching assistant that Django 
+                might not be suitable for our project during our demo! Shortly after the first demo, we made a big 
+                decision to switch to using Flask instead and work a little harder to make up for the changes. 
+                I wouldn’t know whether that was a good decision or not, but it definitely paid off well. Big thanks 
+                to our TA for the advice!
+                <br>
+                <br>
+                Our second roadblock was when we started building the front end for the web application during 
+                the end of sprint two; at first, we were planning on using React, but the application would not 
+                understand any of the React syntax. With a bit of research, we realized we have been using Flask to 
+                handle the routing of pages, so it wasn’t trivial to incorporate React into the project at all, so we 
+                only used Bootstrap and CSS for styling. 
+            </p>
+
+            </div>
+            <div class="col-lg-2"></div>
+        </div>  
+        <div class="col-lg-12">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8" style="margin-top:1%">
+                <blockquote>
+                We used <br>
+                <b>Python, Flask and MySQL</b><br>
+                <b> HTML, CSS, Bootstrap and Javascript</b><br>
+                <b>GitHub</b><br>
+                <b>Jira</b> for tracking our sprint progress<br>
+                <b>Swagger UI</b> for documentation (huge shout out to Weiyu Li for maintaining the documentation)<br>
+                <b>Discord</b> and <b>Google Docs</b> for our standups and meetings<br>
+                <b>Figma</b> for constructing our wireframe mockup<br>
+                </blockquote>  
+                <br>
+                <br>
+                <p>
+                Despite all the challenges and having to do this course fully online, we all managed to pull through 
+                (with a few all-nighters) and presented high quality work. I am really proud of this project. 
+                A big shout out to the amazing team members of Epsilon: 
+                <a style="font-family: 'Oleo Script'; font-size: 1.3vw;" href="https://www.linkedin.com/in/daniela-venturo-esaine/">Daniela Venturo Esaine</a>, 
+                <a style="font-family:Pacifico;font-size: 1.3vw;" href="https://www.linkedin.com/in/coreymfung/">Corey M. Fung</a>, 
+                <a style="font-family: 'Rancho';font-size: 1.3vw;" href="https://www.linkedin.com/in/hritikgandhi/"> Hritik Gandhi</a>, 
+                <a style="font-family: satisfy;font-size: 1.3vw;" href="https://www.linkedin.com/in/kobe-louis-65b2a6153/"> Kobe Louis</a>, 
+                <a style="font-family: Damion;font-size: 1.3vw;" href="https://www.linkedin.com/in/sarah-hameed-b711381a0/">Sarah Hameed</a>, and 
+                <a style="font-family: 'Rock Salt';font-size: 1.3vw;" href="https://www.linkedin.com/in/weiyu-l-65b735157/">Weiyu Li</a> 
+                (I used fancy fonts for your names as requested ;))!<br>
+                Here's the <a href="https://github.com/UTSCCSCC01/project-epsilon">link</a> to the GitHub repo!
+            </p>
+
+            </div>
+            <div class="col-lg-2"></div>
+        </div>              
+        <img id="seagull" class="col-xs-2 col-sm-2 col-md-2 col-lg-1" src="/images/Seagull.png" />
+    </main>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="width:100%;margin:0; padding:0">
+    <% include ../../helpers/footer %>
+    </div>
+</body>
+</html>

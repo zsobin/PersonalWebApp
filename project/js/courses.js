@@ -30,8 +30,17 @@ app.controller("courseCtrl", function($scope) {
                 "description": "Greedy Algorithm, Divide and Conquer, Dynamic Programming, Max Flow and its Applications, Linear Programming, Approximation Algorithm"
             },
             {
+                "code": "CSCD18",
+                "courseName": "Computer Graphics",
+                "semester": "Fall 2021",
+                "link": "https://utsc.calendar.utoronto.ca/course/cscd18h3",
+                "notesLink": "/documents/CSCD18Notes.pdf",
+                "notesName": "CSCD18Notes",
+                "description": "Image Formation, Object Models and Manipulation, Cameras, Ray Tracing, Illumination, Path Tracing"
+            },
+            {
                 "code": "MATA22",
-                "courseName": "Linear Algebra I",
+                "courseName": "Linear Algebra I for Mathematical Sciences",
                 "semester": "Winter 2019",
                 "link": "https://utsc.calendar.utoronto.ca/course/mata22h3",
                 "notesLink": "/documents/MATA22Notes.pdf",
@@ -91,6 +100,15 @@ app.controller("courseCtrl", function($scope) {
                 "notesLink": "/documents/MATC01Notes.pdf",
                 "notesName": "MATC01Notes",
                 "description": "Groups, Subgroups, Cyclic Groups, Permutation Groups, Homomorphisms, Cosets, Lagrange's Theorem, Normal Subgroups, Quotient Groups"
+            },
+            {
+                "code": "MATC09",
+                "courseName": "Introduction to Mathematical Logic",
+                "semester": "Fall 2021",
+                "link": "https://utsc.calendar.utoronto.ca/course/matc09h3",
+                "notesLink": "/documents/MATC09Notes.pdf",
+                "notesName": "MATC09Notes",
+                "description": "Predicate Logic, First-Order Logic, Logical Implication, Definability, Deduction, Gödel's Completeness Theorem"
             },
             {
                 "code": "STAB52",
