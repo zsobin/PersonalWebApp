@@ -66,6 +66,12 @@ a:hover {
   text-decoration: none;
   color:#7B90D2;
 }
+p a {
+  color: #81C7D4;
+}
+p a:hover {
+  color:#768dda;
+}
 
 p {
   font-size: 1.1vw;
@@ -390,6 +396,12 @@ td:hover {
   text-align: left;
   min-height:2.6vw;
 }
+.resume h4 a{
+  color: rgba(165,222,228,1);
+}
+.resume h4 a:hover{
+  color: #7B90D2;
+}
 .resume h3 {
   margin: 0 10%;
 }
@@ -407,6 +419,15 @@ td:hover {
 }
 button:focus{
   outline: none;
+}
+blockquote{
+  background-color: #52575e;
+  margin:1% 10%;
+  color: #81C7D4;
+  font-size: 1.1vw;
+  font-family: 'Source Code Pro', monospace;
+  box-shadow: #434343 1px;
+  border-left: 5px solid #81C7D4;
 }
 
 @media screen and (max-width: 800px) {
