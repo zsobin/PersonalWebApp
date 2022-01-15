@@ -8,7 +8,7 @@ app.controller("experienceCtrl", function($scope) {
                 "date": "Sept 2021 - Apr 2022",
                 //"link": "projects/maintenanceNotif",
                 "image": "/images/UofTLogo.png",
-                "description": "By holding weekly tutorials and marking quizzes, I take part in teaching the courses MATA32 and MATA22.",
+                "description": "By holding weekly tutorials and marking quizzes, I take part in teaching the courses MATA32, MATA22 and CSCA48.",
                 "orgLink":"https://www.utoronto.ca/"
             },
             {
